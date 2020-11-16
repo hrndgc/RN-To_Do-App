@@ -13,7 +13,7 @@ const Main = () => {
       todo: text,
       isDone: false,
     };
-    const newArray = [element, ...list];
+    const newArray = [element, ...list];  //Used Spread operator
     // newArray.push(element)
 
     setList(newArray);
@@ -28,6 +28,7 @@ const Main = () => {
     setList(newArray);
   }
 
+  //Removing todo
   function removeTodo(todoId) {
     const newArray = [...list];
     const todoIndex = list.findIndex(t => t.id == todoId);
